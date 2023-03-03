@@ -66,11 +66,6 @@
         padding: 7rem 3% 1rem;
         flex-wrap: wrap-reverse;
     }
-    .foto-home {
-        height: 25rem;
-        width: 25rem;
-        border-radius: 85%;
-    }
     .texto-home {
         padding-top: 100px;
         padding-right: 90px;
@@ -83,55 +78,24 @@
     .sobre-mim {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        flex direction: row;
+        align-items: center;
         font-family: 'Poppins',sans-serif;
         min-height: 100vh;
         padding: 7rem 3% 1rem;
-        flex-wrap: wrap-reverse;
         background-color: white;
      }
+     .foto-sobre{
+        height: 25rem;
+        width: 25rem;
+        border-radius: 85%;
+    }
      .sobre-mim-texto{
         color:#0b0142;
         padding-top: 100px;
         padding-right: 90px;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
-
-    /* Responsividade -- */
-
-    @media (max-width: 520px) {
-        .texto-home{
-            color: white;
-            font-size: 1rem;
-        }
-        .foto-home{
-            height: 10rem;
-            width: 10rem;
-            border-radius: 85%;
-        }
-        .menu{
-            position: fixed;
-            display: flex;
-            padding-top: 60px;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: flex-start;
-            align-self: auto;
-            
-         }
-         .menu-foto {
-            height: 90px;
-         }
-         .home{ 
-            display: flex;
-            align-items: center;
-            justify-content:center;
-            flex-wrap: wrap-reverse;
-            gap: 1px;   
-            min-height: 10vh; 
-        }
-    }
-
     /*Apresentação de projetos*/
     .portfolio{ 
         display: flex;
@@ -140,9 +104,18 @@
         min-height: 100vh;
         padding: 7rem 3% 1rem;
         flex-wrap: wrap;
+        gap: 2rem;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
     }
     .projeto1 {
+        height: 30rem;
+        background-color: white;
+    }
+    .projeto2 {
+        height: 30rem;
+        background-color: white;
+    }
+    .projeto3 {
         height: 30rem;
         background-color: white;
     }
@@ -166,3 +139,53 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #ffffff;
       }
+
+
+      /* Responsividade -- */
+
+    @media (max-width: 997px) {
+        .texto-home{
+            color: white;
+            font-size: 2rem;
+        }
+        .foto-sobre{
+            height: 20rem;
+            width: 20rem;
+            border-radius: 85%;
+        }
+        .menu{
+            position: fixed;
+            display: flex;
+            padding-top: 60px;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+            align-self: auto;
+            
+         }
+         .menu-foto {
+            height: 90px;
+         }
+         .home{ 
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-wrap: wrap-reverse;
+            gap: 1px;   
+            min-height: 10vh; 
+        }
+        .sobre-mim {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Poppins',sans-serif;
+            min-height: 100vh;
+            padding: 7rem 3% 1rem;
+            flex-wrap: wrap-reverse;
+            background-color: white;
+         }
+         .sobre-mim-texto{
+            font-size: 2rem;
+         }
+    }
