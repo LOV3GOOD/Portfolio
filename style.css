@@ -1,0 +1,168 @@
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        scroll-behavior: smooth;
+     }
+     body {
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
+        min-width: 150px;
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+     }
+
+     /* MENU ----- */
+
+     .menu{
+        display: flex;
+        padding-top: 25px;
+        gap: 100px;
+        justify-content: flex-start;
+        position: fixed;
+     }
+    .cabeçalho{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 0px;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    .menu-item {
+        color: white;
+        font-family: 'Poppins',sans-serif;
+        transition: 0.3s ease-in;
+    }
+    .menu-foto{
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        position: fixed; 
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
+    }
+    .foto-menu-logo {
+        height: 75px;
+        width: 75px;
+    }
+    .menu-item:hover {
+        color: rgb(131, 5, 180);
+    }
+
+    /* Pagina Inicial --*/
+
+    .home{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins',sans-serif;
+        min-height: 100vh;
+        padding: 7rem 3% 1rem;
+        flex-wrap: wrap-reverse;
+    }
+    .foto-home {
+        height: 25rem;
+        width: 25rem;
+        border-radius: 85%;
+    }
+    .texto-home {
+        padding-top: 100px;
+        padding-right: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    /* Sobre mim --*/
+
+    .sobre-mim {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Poppins',sans-serif;
+        min-height: 100vh;
+        padding: 7rem 3% 1rem;
+        flex-wrap: wrap-reverse;
+        background-color: white;
+     }
+     .sobre-mim-texto{
+        color:#0b0142;
+        padding-top: 100px;
+        padding-right: 90px;
+        font-size: 2rem;
+    }
+
+    /* Responsividade -- */
+
+    @media (max-width: 520px) {
+        .texto-home{
+            color: white;
+            font-size: 1rem;
+        }
+        .foto-home{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 85%;
+        }
+        .menu{
+            position: fixed;
+            display: flex;
+            padding-top: 60px;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+            align-self: auto;
+            
+         }
+         .menu-foto {
+            height: 90px;
+         }
+         .home{ 
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-wrap: wrap-reverse;
+            gap: 1px;   
+            min-height: 10vh; 
+        }
+    }
+
+    /*Apresentação de projetos*/
+    .portfolio{ 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        padding: 7rem 3% 1rem;
+        flex-wrap: wrap;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
+    }
+    .projeto1 {
+        height: 30rem;
+        background-color: white;
+    }
+
+    /* Scroll Bar personalização*/
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      
+      ::-webkit-scrollbar-track {
+        background: #0b0142;
+      }
+      
+      
+      ::-webkit-scrollbar-thumb {
+        background: #faf8f8;
+      }
+      
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+      }
