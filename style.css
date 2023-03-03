@@ -44,6 +44,7 @@
         display: flex;
         justify-content: center;
         min-width: 100%;
+        margin-left: -1%;
         position: fixed; 
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
     }
@@ -78,13 +79,14 @@
     .sobre-mim {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex direction: row;
         align-items: center;
         font-family: 'Poppins',sans-serif;
         min-height: 100vh;
         padding: 7rem 3% 1rem;
         background-color: white;
      }
+
      .foto-sobre{
         height: 25rem;
         width: 25rem;
@@ -92,9 +94,13 @@
     }
      .sobre-mim-texto{
         color:#0b0142;
-        padding-top: 100px;
         padding-right: 90px;
         font-size: 1.3rem;
+        
+    }
+    .titulo-sobre{
+        color:#0b0142;
+        font-size: 3.3rem;
     }
     /*Apresentação de projetos*/
     .portfolio{ 
@@ -146,7 +152,7 @@
     @media (max-width: 997px) {
         .texto-home{
             color: white;
-            font-size: 2rem;
+            font-size: 1rem;
         }
         .foto-sobre{
             height: 20rem;
@@ -185,7 +191,10 @@
             flex-wrap: wrap-reverse;
             background-color: white;
          }
+         .titulo-sobre {
+            font-size: 1rem;
+         }
          .sobre-mim-texto{
-            font-size: 2rem;
+            font-size: 1rem;
          }
     }
