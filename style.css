@@ -78,13 +78,14 @@
     .sobre-mim {
         display: flex;
         justify-content: center;
-        flex direction: row;
+        flex-direction: row;
         align-items: center;
         font-family: 'Poppins',sans-serif;
         min-height: 100vh;
         padding: 7rem 3% 1rem;
         background-color: white;
      }
+
      .foto-sobre{
         height: 25rem;
         width: 25rem;
