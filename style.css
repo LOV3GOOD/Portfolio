@@ -79,14 +79,15 @@
     .sobre-mim {
         display: flex;
         justify-content: center;
-        flex direction: row;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
         font-family: 'Poppins',sans-serif;
-        min-height: 100vh;
-        padding: 7rem 3% 1rem;
+        min-height: 100%;
+        padding: 3rem 3% 1rem;
+        size: 10%;
         background-color: white;
      }
-
+     a.anchor{display: block; position: relative; top: -150px; visibility: hidden;} /* Ancora criada para solicionar problema onde a rolagem iria muito longe quando clicada no menu.*/
      .foto-sobre{
         height: 25rem;
         width: 25rem;
@@ -100,31 +101,71 @@
     }
     .titulo-sobre{
         color:#0b0142;
-        font-size: 3.3rem;
+        font-size: 4.3rem;
     }
     /*Apresentação de projetos*/
+    .port {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .portfolio{ 
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        min-height: 100vh;
+        flex-direction: row;
+        align-items: flex-start;
+        min-height: 70vh;
         padding: 7rem 3% 1rem;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 3rem;
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%); 
     }
-    .projeto1 {
-        height: 30rem;
-        background-color: white;
+    .port-titulo {
+        font-size: 6.3rem;
+        letter-spacing: 3px;
     }
-    .projeto2 {
-        height: 30rem;
+    .carta {
+        width: 290px;
+        height: 354px;
+        border-radius: 50px;
+        background: #e0e0e0;
+       }
+    .foto-projeto{
+        max-width: 100%; height: auto;
+       }
+    .organizacao-botoes{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: stretch;
+        height: 6rem;
+       }
+    .button {
+        width: fit-content;
+        min-width: 100px;
+        height: 45px;
+        padding: 8px;
+        width: 8rem;
+        border-radius: 5px;
+        border: 2.5px solid #E0E1E4;
+        box-shadow: 0px 0px 20px -20px;
+        cursor: pointer;
         background-color: white;
-    }
-    .projeto3 {
-        height: 30rem;
-        background-color: white;
-    }
+        transition: all 0.2s ease-in-out 0ms;
+        user-select: none;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+    .button:hover {
+        background-color: #F2F2F2;
+        box-shadow: 0px 0px 20px -18px;
+      }
+      
+    .button:active {
+        transform: scale(0.95);
+      }
 
     /* Scroll Bar personalização*/
     ::-webkit-scrollbar {
@@ -132,20 +173,21 @@
       }
       
       
-      ::-webkit-scrollbar-track {
+    ::-webkit-scrollbar-track {
         background: #0b0142;
       }
       
       
-      ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
         background: #faf8f8;
       }
       
       
-      ::-webkit-scrollbar-thumb:hover {
+    ::-webkit-scrollbar-thumb:hover {
         background: #ffffff;
       }
-
+      /*Footer e Contatos*/
+      
 
       /* Responsividade -- */
 
@@ -197,4 +239,53 @@
          .sobre-mim-texto{
             font-size: 1rem;
          }
+         @media (max-width: 604px) {
+            .texto-home{
+                color: white;
+                font-size: 1rem;
+            }
+            .foto-sobre{
+                height: 11rem;
+                width: 11rem;
+                border-radius: 85%;
+            }
+            .menu{
+                position: fixed;
+                display: flex;
+                padding-top: 60px;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: flex-start;
+                align-self: auto;
+                
+             }
+             .menu-foto {
+                height: 90px;
+             }
+             .home{ 
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                flex-wrap: wrap-reverse;
+                gap: 1px;   
+                min-height: 10vh; 
+            }
+            .sobre-mim {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                font-family: 'Poppins',sans-serif;
+                min-height: 100vh;
+                padding: 7rem 3% 1rem;
+                flex-wrap: wrap-reverse;
+                background-color: white;
+             }
+             .titulo-sobre {
+                font-size: 2rem;
+             }
+             .sobre-mim-texto{
+                font-size: 1rem;
+             }
+            }
     }
