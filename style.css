@@ -98,15 +98,15 @@ body {
     background-color: white;
 }
 
+
+/* Ancora criada para solicionar problema onde a rolagem iria muito longe quando clicada no menu.*/
+
 a.anchor {
     display: block;
     position: relative;
     top: -150px;
     visibility: hidden;
 }
-
-
-/* Ancora criada para solicionar problema onde a rolagem iria muito longe quando clicada no menu.*/
 
 .foto-sobre {
     height: 25rem;
@@ -305,12 +305,14 @@ a.anchor {
         padding: 7rem 3% 1rem;
         flex-wrap: wrap-reverse;
         background-color: white;
+        text-align: center;
     }
     .titulo-sobre {
-        font-size: 1rem;
+        font-size: 3rem;
     }
     .sobre-mim-texto {
         font-size: 1rem;
+        padding: 0px;
     }
     .port-titulo {
         font-size: 3.3rem;
@@ -321,6 +323,12 @@ a.anchor {
         height: 354px;
         border-radius: 50px;
         background: #e0e0e0;
+    }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -450px;
+        visibility: hidden;
     }
     @media (max-width: 604px) {
         .texto-home {
@@ -362,13 +370,19 @@ a.anchor {
             padding: 7rem 3% 1rem;
             flex-wrap: wrap-reverse;
             background-color: white;
-            text-align: center;
         }
         .titulo-sobre {
             font-size: 2rem;
         }
         .sobre-mim-texto {
             font-size: 1rem;
+            padding: 0px;
+        }
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -300px;
+            visibility: hidden;
         }
     }
 }
