@@ -171,7 +171,7 @@ h1.tit-port {
 
 .foto-carta {
     display: flex;
-    position: staticgh;
+    position: static;
     align-items: center;
     justify-content: center;
     height: 60%;
@@ -182,34 +182,6 @@ h1.tit-port {
     height: 100%;
     margin:auto;
     border-radius: 20%;
-}
-
-.sobrepor-foto {
-    display: flex;
-    justify-content: center;
-    position:absolute;
-    height: 30px;
-    width: 280px;
-    border-radius: 10%;
-    padding-top: 190px;
-    margin-bottom: 140px;
-    background: #e0e0e0;
-    transition: all 0.4s ease-in-out 0ms;
-    opacity: 0%;
-}
-.sobrepor-foto:hover {
-    opacity: 100%;
-}
-
-.texto-sobrepor {    
-    color: black;
-    transition: all 0.4s ease-in-out 0ms;
-    opacity: 100%;
-    position: absolute;
-    top: 20px;
-}
-.texto-sobrepor:hover {
-    opacity: 100%;
 }
 
 .organizacao-botoes {
