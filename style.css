@@ -221,6 +221,37 @@ h1.tit-port {
 }
 
 
+/* Habilidades*/
+.hab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    padding: 3rem 3% 1rem;
+    size: 10%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%);
+}
+.hab-titulo {
+    font-size: 4.3rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: -50px;
+}
+.foto-habilidade {
+    height: 10rem;
+    width: 10rem; 
+}
+.habilidades-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
 /* Scroll Bar personalização*/
 
  ::-webkit-scrollbar {
@@ -286,7 +317,7 @@ h1.tit-port {
 
 /* Responsividade -- */
 
-@media (max-width: 997px) {
+@media (max-width: 1247px) {
     .texto-home {
         color: white;
         font-size: 1rem;
@@ -304,6 +335,9 @@ h1.tit-port {
     }
     .menu-foto {
         height: 90px;
+    }
+    .foto-inicio {
+        height: 290px;
     }
     .home {
         display: flex;
