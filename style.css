@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%);
+    min-width: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* MENU ----- */
+
+.menu {
+    display: flex;
+    padding-top: 25px;
+    gap: 100px;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 0px;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.menu-item {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in;
+}
+
+.menu-foto {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    margin-left: -1%;
+    position: fixed;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%);
+}
+
+.foto-menu-logo {
+    height: 75px;
+    width: 75px;
+}
+
+.menu-item:hover {
+    color: rgb(131, 5, 180);
+}
+
+
+/* Pagina Inicial --*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 1vh;
+    padding: 1rem 3% 1rem;
+    flex-wrap: nowrap;  
+}
+
+.foto-inicio {
+    height: 690px;
+    margin-left: 100px;
+    align-self: center;
+}
+/* Sobre mim --*/
+
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    padding: 3rem 3% 1rem;
+    size: 10%;
+    background-color: white;
+}
+
+
+/* Ancora criada para solicionar problema onde a rolagem iria muito longe quando clicada no menu.*/
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+.foto-sobre {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 85%;
+}
+
+.sobre-mim-texto {
+    color: #0b0142;
+    padding-right: 90px;
+    font-size: 1.3rem;
+}
+
+.titulo-sobre {
+    color: #0b0142;
+    font-size: 4.3rem;
+}
+
+
+/*Apresentação de projetos*/
+
+.port {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 70vh;
+    padding: 7rem 3% 1rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%);
+}
+
+.port-titulo {
+    font-size: 6.3rem;
+    letter-spacing: 3px;
+}
+
+h1.tit-port {
+    color: black;
+}
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+    width: 290px;
+    height: 354px;
+    border-radius: 50px;
+    background: #e0e0e0;
+   
+}
+
+.foto-carta {
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 80%;    
+}
+.foto-projeto {
+    min-width: 100%;
+    height: 100%;
+    margin:auto;
+    border-radius: 20%;
+}
+
+.organizacao-botoes {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    height: 6rem;
+}
+
+.button {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    width: 8rem;
+    border-radius: 50px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+
+/* Habilidades*/
+.hab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    padding: 3rem 3% 1rem;
+    size: 10%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0, 15, 12) 0%, #0b0142 100%);
+}
+.hab-titulo {
+    font-size: 4.3rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: -50px;
+}
+.foto-habilidade {
+    height: 10rem;
+    width: 10rem; 
+}
+.habilidades-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+/* Scroll Bar personalização*/
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #0b0142;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #faf8f8;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+/*Footer e Contatos*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.fbotoes {
+    display: flex;
+    align-items: end;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+
+/* Responsividade -- */
+
+@media (max-width: 1247px) {
+    
+    .menu {
+        position: fixed;
+        display: flex;
+        padding-top: 60px;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+        align-self: auto;
+    }
+    .menu-foto {
+        height: 90px;
+    }
+    .foto-inicio {
+        height: 290px;
+        margin-left: 30px;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        gap: 1px;
+        min-height: 10vh;
+    }
+    .foto-sobre {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 85%;
+    }
+    .sobre-mim {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        width: 100%;
+        padding: 7rem 3% 1rem;
+        flex-wrap: wrap-reverse;
+        background-color: white;
+        text-align: center;
+    }
+    .titulo-sobre {
+        font-size: 3rem;
+    }
+    .sobre-mim-texto {
+        font-size: 1rem;
+        padding: 0px;
+    }
+    .port-titulo {
+        font-size: 3.3rem;
+        letter-spacing: 0px;
+    }
+    .hab-titulo {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        color: white;
+        margin-top: -50px;
+    }
+    .foto-habilidade {
+        height: 6rem;
+        width: 6rem; 
+    }
+    .carta {
+        width: 290px;
+        height: 354px;
+        border-radius: 50px;
+        background: #e0e0e0;
+    }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -450px;
+        visibility: hidden;
+    }
+    @media (max-width: 604px) {
+        .texto-home {
+            color: white;
+            font-size: 1rem;
+        }
+        .home{
+            min-height: 1000px;
+        }
+        .foto-sobre {
+            height: 11rem;
+            width: 11rem;
+            border-radius: 85%;
+        }
+        .foto-inicio {
+            margin-top: 50px;
+            height: 150px;
+            margin-left: 30px;
+        }
+        .menu {
+            position: fixed;
+            display: flex;
+            padding-top: 60px;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+            align-self: auto;
+        }
+        .menu-foto {
+            height: 90px;
+        }
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+            gap: 1px;
+            min-height: 10vh;
+        }
+        .sobre-mim {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            padding: 7rem 3% 1rem;
+            flex-wrap: wrap-reverse;
+            background-color: white;
+        }
+        .titulo-sobre {
+            font-size: 2rem;
+        }
+        .sobre-mim-texto {
+            font-size: 1rem;
+            padding: 0px;
+        }
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -300px;
+            visibility: hidden;
+        }
+    }
+}
