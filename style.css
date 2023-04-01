@@ -66,25 +66,24 @@ body {
 
 /* Pagina Inicial --*/
 
+@keyframes floater {
+    0%{transform: translateY(-10%);transition: ease 0.5s;}
+    50%{transform: translateY(10%);transition: ease 0.5s;}
+  }
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    min-height: 1vh;
     padding: 1rem 3% 1rem;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;  
 }
-.texto-home {
-    padding-top: 100px;
-    padding-right: 90px;
-    color: white;
-    font-size: 2rem;
-}
+
 .foto-inicio {
-    height: 500px;
-    margin-bottom: -20px;
+    height: 690px;
+    margin-left: 100px;
+    align-self: center;
 }
 /* Sobre mim --*/
 
@@ -318,12 +317,7 @@ h1.tit-port {
 /* Responsividade -- */
 
 @media (max-width: 1247px) {
-    .texto-home {
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        padding-left: 80px;
-    }
+    
     .menu {
         position: fixed;
         display: flex;
@@ -338,6 +332,7 @@ h1.tit-port {
     }
     .foto-inicio {
         height: 290px;
+        margin-left: 30px;
     }
     .home {
         display: flex;
